@@ -10,4 +10,4 @@ def test_homepage(client):
     """Testa a resposta da home page."""
     response = client.get('/')
     assert response.status_code == 200
-    assert b'Welcome' in response.data  # conteúdo da sua página
+    assert b'Hello, World from Camillus_Cam-ci!' in response.data
